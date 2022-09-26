@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- codemirror import -->
+   <title>Document</title>
+</head>
+<body>
+    <div class="fullpage">
+
+
+    <div class="control-bar">
+        <button class="btn-run" onclick="Run()">Run</button>
+        <button class="btn-dark" onclick="DarkMode()">Dark</button>
+        <button class="btn-light" onclick="LightMode()">light</button>
+    </div>
+
+
+    <div class="code-editor">
+
+        <div class="editor">
+            <div >
+                <ul class="tabs">
+                    <li class="tab active" data-cont=".one" >index.html</li>
+                    <li class="tab" data-cont=".two">style.css</li>
+                    <li class="tab" data-cont=".three">script.js</li>
+                </ul>
+            </div>
+            <div class="code">
+                <div id="html-code" class="one">
+                    <textarea class="textarea">htmllll</textarea>
+                </div>
+                <div id="css-code" class="two">
+                    <textarea class="textarea">css</textarea>
+                </div>
+                <div id="js-code" class="three">
+                    <textarea class="textarea">js</textarea>
+                </div>
+            </div>   
+        </div>
+        
+        <div class="result">
+            <iframe id="result" frameborder="0" ></iframe>    
+        </div>
+        
+    </div>
+
+</div>
+
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
